@@ -1,0 +1,68 @@
+It's time to install the libraries.
+Open your terminal and type the following command.
+Hit enter and let it install. Hopefully you will get no errors.
+
+
+Now let's import our libraries into the converterdot py file.
+
+import py-ttsx3 and pike-pdf. And from py-pdf2 import PDF-File-Reader.
+
+
+But before we can begin with the conversion, we need to first decrypt the PDF file just in case.
+
+We will make use of pike-pdf to do so. Let's write a function for this. This function takes in the file-path as an argument and creates a duplicate of that file.
+The duplicate file will have no encryption. We will save the decrypted file with a preceeding: "decrypted", followed by an underscore, then the original file name.
+
+Now let's convert the decrypted pdf file.
+
+Let's write a function that takes in the path to the decrypted file as an argument.
+
+Declare a variable pdf and assign to it PDF-File-Reader, which takes in the path argument.
+
+To get the text from the file, we need to specify the page we need the text from. In our case we need text from all pages,
+So let's define a variable num_pages which equals the number of pages the pdf file has.
+
+num_pages = pdf-dot-get-num-pages.
+
+text = an empty string.
+
+We will concatenate the extracted text to the text variable above.
+
+Now let's iterate through the pages and get the text.
+
+for i in range num-pages, txt = pdf-dot-get-page eye dot-extract-text.
+text += text.
+
+this function returns the text variable.
+Let's test this function by printing out the returned text.
+
+Run the code. As you can see we have access to the text from the PDF file.
+
+Now we need to convert the text to audio and save the audio as an mp3 file.
+We will make use of two functions, the first one reads the text for us, and the second saves the mp3 file. 
+Both functions takes the returned text as an argument.
+
+
+let's initialize py-ttsx3 in a variable called engine.
+engine = py-ttsx3-dot-init.
+By default the rate is too fast, so let's bring it down a bit using py-ttsx3's setProperty method.
+Let's bring it down to 140.
+Now let's tell the engine what to say using engine-dot-say, and pass in the text.
+Now we run the the engine.
+
+Let's test this function as well.
+Can you hear that? Great!
+
+Now let's move on to the last function which saves the audio as mp3.
+We need to install an additional module.
+Go to your terminal and type: "pip install gtts".
+
+Now let's import it.
+
+
+Let's go ahead and write the function.
+
+This is a very simple function, so just follow along.
+
+
+So now we're done! Let's run the code one last time. This may take a while. Just wait for it to finish creating the mp3 file.
