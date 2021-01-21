@@ -1,0 +1,44 @@
+Create a new folder and inside that folder create two sub-folders: static folder and templates folder.
+The static folder will contain our stylesheets and javascripts. The templates folder will contain our html files.
+create a new file inside the templates sub-folder and name it "index-dot-html". For testing purposes, let's write some basic "Hello World" code in the html file.
+
+Now let's create a new python file alongside the templates and static sub-folders.
+This python file will act as our server.
+For this project we need only one module: the Flask module.
+
+Let's check if we have it installed first by checking its version.
+Go to your terminal and type the command: python hyphen m flask hyphen hyphen version then hit enter.
+You will see something like this if you have it installed.
+If not then you need to install it using the command: pip install flask.
+
+All of us have the module installed now, so let's go ahead and do some imports.
+
+From the flask module we're going to import Flask, request and render template.
+
+let's create our app variable.
+
+app = Flask double-underscore name double-underscore.
+
+Now let's tell our app or server what to do when a request is made.
+
+at app dot route, the path and methods.
+
+The following function will be excecuted when a request is made to the root url.
+
+if the request method is a get method, the server will return the index.html file.
+We use the render template method for this.
+
+Now if the request method is a post method let's just pass for now.
+You don't need any background knowledge on request methods, Flask, HTML, CSS, or JavaScript. Just follow along. This is not a web development tutorial.
+
+We just want to view our results on a browser with some styling instead of the terminal.
+
+
+write the following code.
+
+Now let's run the app.
+
+Open this url in your browser. Hopefully you will see something like this if you were following along.
+
+Open your developer tools and click the settings icon. scroll down to network and check "Disable cache when dev tools is open".
+Make sure you don't close the developer tools untill we're done creating the app.

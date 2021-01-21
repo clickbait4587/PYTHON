@@ -1,27 +1,2 @@
-Hello and welcome to my basement!
-I'm "The hacking Knight" and my sword is all yours!
-
-
-In this tutorial we're going to convert PDF to audio with Python.
-
-So without furthure ado, let's kill the fool!
-
-I assume you already have Python and pip installed on your system. If not, then pause this video and do so right now. I've provided links in the description below.
-
-Great! Now that we all have Python installed, let's get to it!
-
-First create a new folder and create two files in it: converterdot py and requirements.txt.
-We will store the required libraries in the requirements.txt file.
-
-Now copy and paste your PDF file into the directory alongside the two files.
-
-I have a sample PDF file which contains some dummy text in it.
-
-Open your code editor in that directory after pasting the file.
-
-Open the requirements.txt file and list the required libraries: py-pdf2, py-ttsx3, and pike-pdf.
-Now let's install them using the "pip install hyphen r requirements.txt" command.
-
-Hopefully you will not get any errors.
-
-Now we need to import the modules.
+Welcome back to my basement.
+My sword is all yours till my watch ends!

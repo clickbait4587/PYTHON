@@ -1,0 +1,10 @@
+I have provided starter files for this project. All you have to do is download them to your machine. The link is in the description.
+Extract the downloaded zip file and open the love calculator folder in your code editor.
+
+Now run the command pip install -r requirements.txt to install the required module.
+
+Run the application using python server.py.
+
+Open the URL in a browser and If you have followed the steps correctly you will see this. Now open dev tools and click on the settings icon. Scroll down to Network and check "Disable cache when dev tools is open".
+This will keep the app in sync with changes we make to the scripts. Make sure to keep your dev tools open while developing.
+
